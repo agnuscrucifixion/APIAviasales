@@ -1,0 +1,410 @@
+{
+	"info": {
+		"_postman_id": "2b6b4ed1-4eea-4a22-b178-1f051b002d0d",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28406384",
+		"_collection_link": "https://www.postman.com/orbital-module-geoscientist-48122581/workspace/forpractice/collection/28406384-2b6b4ed1-4eea-4a22-b178-1f051b002d0d?action=share&creator=28406384&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/admin/show-all-ticket"
+			},
+			"response": [
+				{
+					"name": "show-all-tickets",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/admin/show-all-ticket"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Jul 2023 16:09:15 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"startTown\": \"string\",\n        \"endTown\": \"string\",\n        \"way\": \"string\",\n        \"price\": 0,\n        \"airport\": \"string\",\n        \"dateTime\": \"string\",\n        \"time\": 0,\n        \"remaining\": 0\n    },\n    {\n        \"id\": 1,\n        \"startTown\": \"string\",\n        \"endTown\": \"string\",\n        \"way\": \"string\",\n        \"price\": 0,\n        \"airport\": \"string\",\n        \"dateTime\": \"string\",\n        \"time\": 0,\n        \"remaining\": 0\n    },\n    {\n        \"id\": 3,\n        \"startTown\": \"string\",\n        \"endTown\": \"string\",\n        \"way\": \"string\",\n        \"price\": 0,\n        \"airport\": \"string\",\n        \"dateTime\": \"string\",\n        \"time\": 0,\n        \"remaining\": 0\n    },\n    {\n        \"id\": 5,\n        \"startTown\": \"string\",\n        \"endTown\": \"string\",\n        \"way\": \"string\",\n        \"price\": 0,\n        \"airport\": \"string\",\n        \"dateTime\": \"string\",\n        \"time\": 0,\n        \"remaining\": 0\n    },\n    {\n        \"id\": 2,\n        \"startTown\": \"Moscow\",\n        \"endTown\": \"Vitiebsk\",\n        \"way\": \"Smolensk, Liozno\",\n        \"price\": 220,\n        \"airport\": \"аа\",\n        \"dateTime\": \"2023-07-17 18:35\",\n        \"time\": 55,\n        \"remaining\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/user/get-tickets-by-airport?airport=аа&startTime=2023-07-15 18:35&endTime=2023-07-18 18:35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"get-tickets-by-airport"
+					],
+					"query": [
+						{
+							"key": "airport",
+							"value": "аа"
+						},
+						{
+							"key": "startTime",
+							"value": "2023-07-15 18:35"
+						},
+						{
+							"key": "endTime",
+							"value": "2023-07-18 18:35"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "show-all-users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/user/show-all-users"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Jul 2023 16:11:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"nickname\": \"Alex\",\n        \"email\": \"fff@gmail.com\",\n        \"password\": \"123123\",\n        \"tickets_buy\": 4\n    }\n]"
+				},
+				{
+					"name": "get-tickets-by-airport",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/user/get-tickets-by-airport?airport=аа&startTime=2023-07-15 18:35&endTime=2023-07-18 18:35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"get-tickets-by-airport"
+							],
+							"query": [
+								{
+									"key": "airport",
+									"value": "аа"
+								},
+								{
+									"key": "startTime",
+									"value": "2023-07-15 18:35"
+								},
+								{
+									"key": "endTime",
+									"value": "2023-07-18 18:35"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Jul 2023 16:13:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"startTown\": \"Moscow\",\n        \"endTown\": \"Vitiebsk\",\n        \"way\": \"Smolensk, Liozno\",\n        \"price\": 220,\n        \"airport\": \"аа\",\n        \"dateTime\": \"2023-07-17 18:35\",\n        \"time\": 55,\n        \"remaining\": 0\n    }\n]"
+				},
+				{
+					"name": "get-EndTowns-and-tickets-by-startTown",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/user/get-EndTowns-and-tickets-by-startTown?startTown=Moscow&hours=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"get-EndTowns-and-tickets-by-startTown"
+							],
+							"query": [
+								{
+									"key": "startTown",
+									"value": "Moscow"
+								},
+								{
+									"key": "hours",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Jul 2023 16:26:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"TicketDTO(id=6, startTown=Moscow, endTown=Warsaw, way=Minsk, price=150, airport=Minsk Central Airport, dateTime=2023-07-15 20:30, time=4.0, remaining=10)\": \"Warsaw\"\n}"
+				}
+			]
+		},
+		{
+			"name": "admin/add-ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 7,\r\n    \"startTown\": \"Milan\",\r\n    \"endTown\": \"Berlin\",\r\n    \"way\": \"-\",\r\n    \"price\": 250,\r\n    \"airport\": \"Berlin Central Airport\",\r\n    \"dateTime\": \"2023-07-15 22:30\",\r\n    \"time\": 6,\r\n    \"remaining\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/admin/add_ticket"
+			},
+			"response": []
+		},
+		{
+			"name": "admin/add-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 3,\r\n  \"nickname\": \"Viktor\",\r\n  \"email\": \"roww@gmail.com\",\r\n  \"password\": \"15432456\",\r\n  \"tickets_buy\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/admin/add-user"
+			},
+			"response": []
+		},
+		{
+			"name": "user/buy-ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/user/buy-ticket?price=250&startTown=Milan&endTown=Berlin&date_time=2023-07-15 22:30&nickname=Viktor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"buy-ticket"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "250"
+						},
+						{
+							"key": "startTown",
+							"value": "Milan"
+						},
+						{
+							"key": "endTown",
+							"value": "Berlin"
+						},
+						{
+							"key": "date_time",
+							"value": "2023-07-15 22:30"
+						},
+						{
+							"key": "nickname",
+							"value": "Viktor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/update-by-town-new_start_town",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/admin/update-by-town-new_start_town?id=2&newStartTown=Ottawa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"update-by-town-new_start_town"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "newStartTown",
+							"value": "Ottawa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/update-by-town-new_end_town",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/admin/update-by-town-new_end_town?id=2&newEndTown=Viena",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"update-by-town-new_end_town"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "newEndTown",
+							"value": "Viena"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/update-by-town-new_airport",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/admin/update-by-town-new_airport?id=2&newAirport=COOL AIRPORT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"admin",
+						"update-by-town-new_airport"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "newAirport",
+							"value": "COOL AIRPORT"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
