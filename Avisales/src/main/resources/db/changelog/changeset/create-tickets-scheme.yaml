@@ -1,0 +1,55 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-tickets
+      author: Padwicki
+      changes:
+        - createTable:
+            tableName: tickets
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: start_town
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: end_town
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: way
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: price
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: airport
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: date_time
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: time
+                  type: double
+                  constraints:
+                    nullable: false
+              - column:
+                  name: remaining
+                  type: int
+                  constraints:
+                    nullable: false

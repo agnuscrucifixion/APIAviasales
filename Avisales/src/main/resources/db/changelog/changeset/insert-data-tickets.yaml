@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Padwicki
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: start_town
+                  value: Moscow
+              - column:
+                  name: end_town
+                  value: Vitiebsk
+              - column:
+                  name: price
+                  value: 220
+              - column:
+                  name: way
+                  value: Smolensk, Liozno
+              - column:
+                  name: airport
+                  value: Sheremetyevo
+              - column:
+                  name: date_time
+                  value: 2023-07-16 14:15
+              - column:
+                  name: time
+                  value: 22.30
+              - column:
+                  name: remaining
+                  value: 11
+
