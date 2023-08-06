@@ -11,6 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackages = "ru.padwicki.aviasales.domain.repository")
 @EntityScan("ru.padwicki.aviasales.domain.entity")
 @ComponentScan("ru.padwicki.aviasales")
+@ComponentScan("ru.padwicki.brokers")
 @SpringBootApplication
 public class Application {
     public static void main(String[] args) {

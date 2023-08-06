@@ -1,4 +1,16 @@
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    stream:
+      username: guest
+      password: guest
+    template:
+      exchange: jsa.rabbitmq.direct
+      routing-key: jsa.rabbitmq.routingkey
+      default-receive-queue: jsa.rabbitmq.queue
+  main:
+    allow-bean-definition-overriding: true
   liquibase:
     change-log: classpath:db/changelog/changeLog.yaml
     enabled: true
@@ -25,4 +37,6 @@ spring:
 
 server:
   port: 8081
+
+
 
