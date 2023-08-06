@@ -13,7 +13,7 @@
     <version>3.1.1</version>
   </parent>
   <modules>
-    <module>Avisales</module>
+    <module>Aviasales</module>
     <module>Broker</module>
   </modules>
 </project>
