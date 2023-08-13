@@ -1,4 +1,4 @@
-package ru.padwicki.tire.rabbitmq;
+package ru.padwicki.aviasales.brokers;
 
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Autowired;

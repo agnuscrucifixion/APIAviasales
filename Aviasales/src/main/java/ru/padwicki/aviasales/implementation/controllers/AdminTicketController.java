@@ -10,7 +10,7 @@ import ru.padwicki.aviasales.implementation.controllersInterfaces.AdminTicketCon
 import ru.padwicki.aviasales.implementation.impl.AdminImpl;
 import ru.padwicki.aviasales.implementation.injection.InjectionAdminImpl;
 import ru.padwicki.aviasales.implementation.injection.InjectionProducer;
-import ru.padwicki.tire.rabbitmq.ProducerRabbit;
+import ru.padwicki.aviasales.brokers.ProducerRabbit;
 
 import java.util.List;
 

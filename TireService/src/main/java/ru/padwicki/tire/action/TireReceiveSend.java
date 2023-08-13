@@ -1,4 +1,4 @@
-package ru.padwicki.tire.actions;
+package ru.padwicki.tire.action;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import ru.padwicki.tire.implementation.injection.InjectionOfKafkaImpl;
 
 @Component
-public class TireConsumer implements InjectionOfKafkaImpl {
+public class TireReceiveSend implements InjectionOfKafkaImpl {
     int id = 0;
     KafkaTemplate<String, String> kafkaTemplate;
 

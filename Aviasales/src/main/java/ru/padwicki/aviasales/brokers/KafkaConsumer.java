@@ -1,4 +1,4 @@
-package ru.padwicki.aviasales.kafka;
+package ru.padwicki.aviasales.brokers;
 
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
