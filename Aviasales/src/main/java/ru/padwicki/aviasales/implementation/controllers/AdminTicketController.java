@@ -10,7 +10,7 @@ import ru.padwicki.aviasales.implementation.controllersInterfaces.AdminTicketCon
 import ru.padwicki.aviasales.implementation.impl.AdminImpl;
 import ru.padwicki.aviasales.implementation.injection.InjectionAdminImpl;
 import ru.padwicki.aviasales.implementation.injection.InjectionProducer;
-import ru.padwicki.brokers.rabbitmq.ProducerRabbit;
+import ru.padwicki.tire.rabbitmq.ProducerRabbit;
 
 import java.util.List;
 
@@ -38,11 +38,7 @@ public class AdminTicketController implements AdminTicketControllerInterface, In
     }
 
     public Ticket addTicket(@RequestBody TicketDTO newTicket) {
-//        String messageString = ;
-//        Message message = new Message(messageString.getBytes());
-//        for (int i = 0; i < 500; i++) {
-            producerRabbit.produceMsg("New TICKETS TO " + newTicket.getEndTown() + " COME!");
-
+        producerRabbit.produceMsg(" New TICKETS TO " + newTicket.getEndTown() + " COME!");
         return ticket.addTicket(newTicket);
     }
 

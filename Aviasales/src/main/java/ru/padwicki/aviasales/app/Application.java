@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.kafka.annotation.EnableKafka;
-import ru.padwicki.aviasales.kafka.KafkaListener;
 
 
 @EnableKafka
@@ -14,9 +13,9 @@ import ru.padwicki.aviasales.kafka.KafkaListener;
 @EntityScan("ru.padwicki.aviasales.domain.entity")
 @ComponentScan("ru.padwicki.aviasales")
 @ComponentScan("ru.padwicki.brokers")
+@ComponentScan("ru.padwicki.tire")
 @SpringBootApplication
 public class Application {
-    KafkaListener kafkaListener = new KafkaListener();
     public static void main(String[] args) {
 
         SpringApplication.run(Application.class);

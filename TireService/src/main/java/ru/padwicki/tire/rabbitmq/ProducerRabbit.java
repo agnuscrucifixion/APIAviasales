@@ -1,4 +1,4 @@
-package ru.padwicki.brokers.rabbitmq;
+package ru.padwicki.tire.rabbitmq;
 
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,13 +38,9 @@ public class ProducerRabbit {
     public Binding binding(Queue queue, TopicExchange exchange) {
         return BindingBuilder.bind(queue).to(exchange).with(routingKey);
     }
-
-    static int i = 1;
     public void produceMsg(String msg) {
-//        msg.getMessageProperties().getXDeathHeader();
-        i++;
-        amqpTemplate.convertAndSend(exchange, routingKey, msg + i);
-//        System.out.println("Send msg = " + msg);
+        amqpTemplate.convertAndSend(exchange, routingKey, msg);
+        System.out.println("RABBIT SEND MESSAGE = " + msg);
     }
 
     public void publishEmail(String msg) {

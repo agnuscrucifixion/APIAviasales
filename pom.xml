@@ -24,7 +24,6 @@
   </dependencies>
   <modules>
     <module>Aviasales</module>
-    <module>Broker</module>
     <module>TireService</module>
   </modules>
 </project>
