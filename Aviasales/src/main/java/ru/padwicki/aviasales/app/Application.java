@@ -12,7 +12,6 @@ import org.springframework.kafka.annotation.EnableKafka;
 @EnableJpaRepositories(basePackages = "ru.padwicki.aviasales.domain.repository")
 @EntityScan("ru.padwicki.aviasales.domain.entity")
 @ComponentScan("ru.padwicki.aviasales")
-@ComponentScan("ru.padwicki.brokers")
 @ComponentScan("ru.padwicki.tire")
 @SpringBootApplication
 public class Application {
