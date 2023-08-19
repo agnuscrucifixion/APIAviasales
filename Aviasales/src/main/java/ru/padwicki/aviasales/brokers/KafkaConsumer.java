@@ -11,8 +11,8 @@ public class KafkaConsumer {
         System.out.println("Kafka LISTEN MESSAGE " + msg);
     }
 
-    @KafkaListener(topics = "buyTicket")
-    public void ticketListener(BuyTicketRqDTO buyTicketRqDTO) {
-        System.out.println("Kafka LISTEN MESSAGE " + buyTicketRqDTO);
-    }
+//    @KafkaListener(topics = "buyTicket")
+//    public void ticketListener(BuyTicketRqDTO buyTicketRqDTO) {
+//        System.out.println("Kafka LISTEN MESSAGE " + buyTicketRqDTO);
+//    }
 }

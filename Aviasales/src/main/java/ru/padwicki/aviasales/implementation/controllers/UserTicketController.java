@@ -48,7 +48,7 @@ public class UserTicketController implements UserTicketControllerInterface, Inje
 
     @Override
     public void buyTicket(@RequestBody @NotNull BuyTicketRqDTO buyTicketRqDTO) {
-        producerRabbit.produceTicket(buyTicketRqDTO);
+//        producerRabbit.produceTicket(buyTicketRqDTO);
 
         user.buyTicket(buyTicketRqDTO.getPrice(), buyTicketRqDTO.getStartTown(),
                 buyTicketRqDTO.getEndTown(), buyTicketRqDTO.getDate_time(), buyTicketRqDTO.getNickname());
