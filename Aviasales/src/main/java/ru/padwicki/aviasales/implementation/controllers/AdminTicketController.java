@@ -2,8 +2,8 @@ package ru.padwicki.aviasales.implementation.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.padwicki.aviasales.api.dto.TicketDTO;
-import ru.padwicki.aviasales.api.dto.UserDTO;
+import ru.padwicki.tire.dto.TicketDTO;
+import ru.padwicki.tire.dto.UserDTO;
 import ru.padwicki.aviasales.domain.entity.Ticket;
 import ru.padwicki.aviasales.domain.entity.User;
 import ru.padwicki.aviasales.implementation.controllersInterfaces.AdminTicketControllerInterface;

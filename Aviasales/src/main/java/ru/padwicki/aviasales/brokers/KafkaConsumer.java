@@ -2,7 +2,7 @@ package ru.padwicki.aviasales.brokers;
 
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
-import ru.padwicki.aviasales.api.dto.BuyTicketRqDTO;
+import ru.padwicki.tire.dto.BuyTicketRqDTO;
 
 @Component
 public class KafkaConsumer {
@@ -11,8 +11,8 @@ public class KafkaConsumer {
         System.out.println("Kafka LISTEN MESSAGE " + msg);
     }
 
-//    @KafkaListener(topics = "buyTicket")
-//    public void ticketListener(BuyTicketRqDTO buyTicketRqDTO) {
-//        System.out.println("Kafka LISTEN MESSAGE " + buyTicketRqDTO);
-//    }
+    @KafkaListener(topics = "buyTicket")
+    public void ticketListener(BuyTicketRqDTO buyTicketRqDTO) {
+        System.out.println("Kafka LISTEN MESSAGE " + buyTicketRqDTO);
+    }
 }

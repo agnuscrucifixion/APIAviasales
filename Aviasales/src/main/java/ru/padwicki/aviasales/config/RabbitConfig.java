@@ -1,6 +1,5 @@
 package ru.padwicki.aviasales.config;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListenerConfigurer;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
@@ -16,7 +15,6 @@ import org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistrar;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 
 @Configuration
-@Slf4j
 public class RabbitConfig implements RabbitListenerConfigurer {
     @Bean
     public RabbitTemplate rabbitTemplate(final ConnectionFactory connectionFactory) {

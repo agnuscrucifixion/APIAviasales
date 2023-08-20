@@ -18,57 +18,11 @@
 //
 //import java.util.HashMap;
 //import java.util.Map;
+//import java.util.Properties;
 //
 //@Configuration
 //public class KafkaConfig {
 //
-//    @Value("${spring.kafka.bootstrap-servers}")
-//    private String kafkaServer;
-//
-//    @Value("${spring.kafka.consumer.group-id}")
-//    private String kafkaGroupId;
-//
-//    @Bean
-//    public Map<String, Object> consumerConfigs() {
-//        Map<String, Object> props = new HashMap<>();
-//        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaServer);
-//        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-//        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-//        props.put(ConsumerConfig.GROUP_ID_CONFIG, kafkaGroupId);
-//        return props;
-//    }
-//    @Bean
-//    public Map<String, Object> producerConfigs() {
-//        Map<String, Object> props = new HashMap<>();
-//        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,
-//                kafkaServer);
-//        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,
-//                StringSerializer.class);
-//        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
-//                JsonSerializer.class);
-//        return props;
-//    }
-//
-//    @Bean
-//    public ProducerFactory<String, BuyTicketRqDTO> producerFactory() {
-//        return new DefaultKafkaProducerFactory<>(producerConfigs());
-//    }
-//    @Bean
-//    public KafkaListenerContainerFactory<?> kafkaListenerContainerFactory() {
-//        ConcurrentKafkaListenerContainerFactory<String, BuyTicketRqDTO> factory =
-//                new ConcurrentKafkaListenerContainerFactory<>();
-//        factory.setConsumerFactory(consumerFactory());
-//        return factory;
-//    }
-//
-//    @Bean
-//    public ConsumerFactory<String, BuyTicketRqDTO> consumerFactory() {
-//        return new DefaultKafkaConsumerFactory<>(consumerConfigs());
-//    }
-//
-//    @Bean
-//    public KafkaTemplate<String, BuyTicketRqDTO> kafkaTemplate() {
-//        return new KafkaTemplate<>(producerFactory());
-//    }
+//    Properties properties = new Properties();
 //
 //}

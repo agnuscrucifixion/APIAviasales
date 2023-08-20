@@ -1,4 +1,4 @@
-package ru.padwicki.aviasales.api.dto;
+package ru.padwicki.tire.dto;
 
 import lombok.Data;
 

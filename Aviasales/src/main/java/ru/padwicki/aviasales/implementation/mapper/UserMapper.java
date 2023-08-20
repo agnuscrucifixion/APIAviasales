@@ -1,8 +1,7 @@
 package ru.padwicki.aviasales.implementation.mapper;
 
 import org.mapstruct.Mapper;
-import org.springframework.stereotype.Component;
-import ru.padwicki.aviasales.api.dto.UserDTO;
+import ru.padwicki.tire.dto.UserDTO;
 import ru.padwicki.aviasales.domain.entity.User;
 import ru.padwicki.aviasales.implementation.models.UserModel;
 

@@ -1,4 +1,4 @@
-package ru.padwicki.aviasales.api.dto;
+package ru.padwicki.tire.dto;
 
 public class GetTicketByStartRqDTO {
     public TicketDTO ticket;

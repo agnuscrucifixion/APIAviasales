@@ -2,7 +2,6 @@ package ru.padwicki.aviasales.domain.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ru.padwicki.aviasales.api.dto.TicketDTO;
 import ru.padwicki.aviasales.domain.entity.Ticket;
 
 import java.util.List;

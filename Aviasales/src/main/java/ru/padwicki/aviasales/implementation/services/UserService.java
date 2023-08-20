@@ -1,22 +1,11 @@
 package ru.padwicki.aviasales.implementation.services;
 
 
-import org.apache.commons.lang3.tuple.Pair;
-import org.springframework.data.crossstore.ChangeSetPersister;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import ru.padwicki.aviasales.api.dto.GetTicketByStartRqDTO;
-import ru.padwicki.aviasales.api.dto.TicketDTO;
-import ru.padwicki.aviasales.api.dto.UserDTO;
-import ru.padwicki.aviasales.domain.entity.Ticket;
-import ru.padwicki.aviasales.implementation.exception.NoExistSuchTickets;
+import ru.padwicki.tire.dto.GetTicketByStartRqDTO;
+import ru.padwicki.tire.dto.TicketDTO;
 
-import java.text.ParseException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 public interface UserService {

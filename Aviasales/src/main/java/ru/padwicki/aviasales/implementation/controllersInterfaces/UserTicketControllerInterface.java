@@ -1,16 +1,12 @@
 package ru.padwicki.aviasales.implementation.controllersInterfaces;
 
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.web.bind.annotation.*;
-import ru.padwicki.aviasales.api.dto.BuyTicketRqDTO;
-import ru.padwicki.aviasales.api.dto.GetTicketByStartRqDTO;
-import ru.padwicki.aviasales.api.dto.TicketDTO;
-import ru.padwicki.aviasales.implementation.exception.NoExistSuchTickets;
+import ru.padwicki.tire.dto.BuyTicketRqDTO;
+import ru.padwicki.tire.dto.GetTicketByStartRqDTO;
+import ru.padwicki.tire.dto.TicketDTO;
 
 import java.text.ParseException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @RequestMapping("/user")
 public interface UserTicketControllerInterface {

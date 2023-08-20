@@ -1,8 +1,7 @@
 package ru.padwicki.aviasales.implementation.mapper;
 
 import org.mapstruct.Mapper;
-import org.springframework.stereotype.Component;
-import ru.padwicki.aviasales.api.dto.TicketDTO;
+import ru.padwicki.tire.dto.TicketDTO;
 import ru.padwicki.aviasales.domain.entity.Ticket;
 import ru.padwicki.aviasales.implementation.models.TicketModel;
 
