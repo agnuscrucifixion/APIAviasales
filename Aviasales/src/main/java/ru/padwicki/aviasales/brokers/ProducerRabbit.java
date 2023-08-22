@@ -5,6 +5,7 @@ import org.jetbrains.annotations.NotNull;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import ru.padwicki.tire.dto.BuyTicketRqDTO;
@@ -20,9 +21,13 @@ public class ProducerRabbit {
     public void setRabbitTemplate(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
     }
-    private String exchange = "jsa.rabbitmq.direct";
-    private String routingKey = "jsa.rabbitmq.routingkey";
-    public static final String queue = "jsa.rabbitmq.queue";
+
+    @Value("${spring.rabbitmq.template.exchange}")
+    private String exchange;
+    @Value("${spring.rabbitmq.template.routing-key}")
+    private String routingKey;
+    @Value("${spring.rabbitmq.template.default-receive-queue}")
+    private String queue;
 
 
     private String exchangeBuyTicket = "exchangeBuyTicket";
