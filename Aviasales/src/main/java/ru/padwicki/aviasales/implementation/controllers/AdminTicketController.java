@@ -15,7 +15,6 @@ import ru.padwicki.aviasales.brokers.ProducerRabbit;
 import java.util.List;
 
 @RestController
-
 public class AdminTicketController implements AdminTicketControllerInterface, InjectionAdminImpl, InjectionProducer {
 
     AdminImpl ticket;
