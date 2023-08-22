@@ -52,7 +52,9 @@ public class UserTicketController implements UserTicketControllerInterface, Inje
     @Override
     public List<GetTicketByStartRqDTO> getTicketsByStartTown(@RequestParam String startTown,
                                                              @RequestParam String hours) {
-        return user.getTicketsByStartTown(startTown,hours);
+        List<GetTicketByStartRqDTO> listOfTickets = user.getTicketsByStartTown(startTown,hours);
+        producerRabbit.produceGetTicket(listOfTickets);
+        return listOfTickets;
     }
 
     @Override

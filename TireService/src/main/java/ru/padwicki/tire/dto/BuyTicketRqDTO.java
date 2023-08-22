@@ -8,14 +8,9 @@ import java.io.Serializable;
 
 @Data
 public class BuyTicketRqDTO implements Serializable {
-    @JsonProperty
     Integer price;
-    @JsonProperty
     String startTown;
-    @JsonProperty
     String endTown;
-    @JsonProperty
     String date_time;
-    @JsonProperty
     String nickname;
 }
