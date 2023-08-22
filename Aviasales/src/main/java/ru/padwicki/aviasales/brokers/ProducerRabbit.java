@@ -93,10 +93,6 @@ public class ProducerRabbit {
         System.out.println("RABBIT SEND MESSAGE = " + getTicketByStartRqDTO);
     }
 
-    public void publishEmail(String msg) {
-        rabbitTemplate.convertAndSend(exchange, routingKey, msg);
-        System.out.println("Send msg = " + msg);
-    }
 }
 
 
