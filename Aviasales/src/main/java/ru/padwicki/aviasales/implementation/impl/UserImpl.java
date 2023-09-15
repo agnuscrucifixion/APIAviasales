@@ -20,8 +20,8 @@ public class UserImpl implements UserService, InjectionOfTicketMapper, Injection
 
     private final TicketRepository ticketRepo;
     private final UserRepository userRepository;
-    TicketMapperImpl ticketMapper;
-    AdminImpl ticket;
+    private TicketMapperImpl ticketMapper;
+    private AdminImpl ticket;
 
     @Autowired
     public UserImpl(TicketRepository ticketRepo, UserRepository userRepository) {
